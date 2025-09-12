@@ -8,38 +8,32 @@ description: "Learn how to trigger PR reviews using Refacto-bot."
 Refacto-bot supports two ways to trigger reviews for your pull requests.
 
 <CardGroup cols={1}>
+  <Card title="Auto Review" icon="bolt">
+    Refacto can automatically review a pull request when it's opened.
 
-<Card title="Auto Review" icon="bolt">
-Refacto can automatically review every pull request the moment it's opened.
+    This feature is off by default. To turn it on, follow these steps:
 
-**How to Enable Auto Review**
-<br/>
-This feature is off by default. To turn it on, follow these steps:
+    <Steps>
+      <Step>
+        Navigate to the [Settings](https://app.refacto.ai/settings) page in the Refacto app.
+      </Step>
+      <Step>
+        Find the **Auto Review** option and toggle it **ON**.
+      </Step>
+    </Steps>
+    <Tip>
+      Once enabled, every new PR is reviewed automatically — perfect for consistent, hands-free checks.
+    </Tip>
+  </Card>
+  <Card title="Manual Review" icon="terminal">
+    You can also trigger reviews manually by adding a comment in a PR:
 
-<Steps>
-  <Step>
-    Navigate to the [Settings](https://app.refacto.ai/settings) page in the Refacto app.
-  </Step>
-  <Step>
-    Find the **Auto Review** option and toggle it **ON**.
-  </Step>
-</Steps>
+    ```text
+    /refacto-bot
+    ```
 
-<Tip>
-Once enabled, every new PR is reviewed automatically — perfect for consistent, hands-free checks.
-</Tip>
-</Card>
-
-<Card title="Manual Review" icon="terminal">
-You can also trigger reviews manually by adding a comment in a PR:
-
-<CodeBlock language="text">
-/refacto-bot
-</CodeBlock>
-
-<Tip>
-Perfect for running reviews **only when you need them**, giving you full control over which PRs get checked.
-</Tip>
-</Card>
-
+    <Tip>
+      Perfect for running reviews **only when you need them**, giving you full control over which PRs get checked.
+    </Tip>
+  </Card>
 </CardGroup>
