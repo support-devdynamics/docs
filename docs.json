@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Refacto Docs",
   "colors": {
-    "primary": "#3B82F6",
-    "light": "#F8FAFC",
-    "dark": "#0F172A"
+    "primary": "#605DFD",
+    "light": "#605DFD",
+    "dark": "#605DFD"
   },
   "favicon": "/favicon.png",
   "navigation": {
