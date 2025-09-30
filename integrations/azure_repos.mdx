@@ -1,5 +1,44 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Azure Repos"
+description: "Connect Refacto to your Azure DevOps Repos."
 ---
 
+Follow these steps to connect Refacto to your Azure DevOps repositories.
+
+<Steps>
+  <Step title="Go to Integrations" icon="window">
+    - Navigate to the **Integrations** page in your Refacto dashboard.
+    - Click **Connect** on **Azure Repos**.
+
+      ![Azure Integration Page Pn](/images/installation/azure/azure-integration-page.png)
+    - 
+  </Step>
+  <Step title="Fill in the Setup Form" icon="form">
+    On the Azure Repos setup page, provide the following details:
+
+    1. **PAT Token** – Enter the **Personal Access Token (PAT)** of an Admin user.\
+       👉 [Learn how to create a PAT in Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate)
+    2. **Azure DevOps Organisation Name** – Extract the organisation name from your Azure DevOps URL.\
+       Example:
+
+       ```
+       https://dev.azure.com/bluetowers/
+       ```
+
+       → organisation name is **bluetowers**.
+    3. **Bot Email** – Enter the email address of the bot user.
+
+    Click **Save Settings** when done.
+
+    ![Azure Repos setup form with PAT Token, Organisation Name, and Bot Email fields](/images/integrations/azure-repos-form.png)
+  </Step>
+  <Step title="Verify the Connection" icon="check">
+    - Refacto will validate your credentials.
+    - If successful, you’ll see a confirmation message.
+    - Your repositories will begin syncing.
+  </Step>
+  <Step title="Done 🎉" icon="party">
+    Your Azure Repos integration is now active.\
+    You can track pull requests and analyze engineering metrics directly in the Refacto dashboard.
+  </Step>
+</Steps>
