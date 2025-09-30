@@ -3,6 +3,8 @@ title: "Azure Repos"
 description: "Connect Refacto to your Azure DevOps Repos."
 ---
 
+# Azure Repos Integration
+
 Follow these steps to connect Refacto to your Azure DevOps repositories.
 
 <Steps>
@@ -11,22 +13,48 @@ Follow these steps to connect Refacto to your Azure DevOps repositories.
     - Click **Connect** on **Azure Repos**.
 
       ![Azure Integration Page Pn](/images/installation/azure/azure-integration-page.png)
-    - 
+  </Step>
+  <Step title="Create a Review User" icon="user">
+    You need to create a dedicated **review user** in Azure DevOps.
+
+    1. Navigate to **Organization Settings**.
+
+       ![Org Setting Pn](/images/installation/azure/org-setting.png)
+    2. Go to **Users** from the sidebar. Click **Add users**.
+
+       ![Click On Add Users Pn](/images/installation/azure/click-on-add-users.png)
+    3. Enter the **email** for the review user.
+    4. Set **Access level** to **Basic**.
+    5. Choose the projects where Refacto should be active.
+    6. Under **Azure DevOps Group**, select **Project Administrator** (required to create webhooks in “Service Hooks”).
+
+    ![Azure DevOps Add User](/images/integrations/azure-add-user.png)
+  </Step>
+  <Step title="Generate a Personal Access Token (PAT)" icon="key">
+    Next, create a Personal Access Token for the review user.
+
+    1. Navigate to **User Settings → Personal Access Tokens**.
+    2. Click **New Token**.
+    3. Select the correct organization and give the token a descriptive name.
+    4. Choose **Custom defined scopes** with permissions required for repositories and service hooks.
+    5. Set an expiration date as per your organization’s policy.
+    6. Click **Create** and copy the generated token — it will be shown only once.
+
+    ![Azure DevOps PAT Creation](/images/integrations/azure-pat.png)
   </Step>
   <Step title="Fill in the Setup Form" icon="form">
-    On the Azure Repos setup page, provide the following details:
+    On the Azure Repos setup page in Refacto, provide the following:
 
-    1. **PAT Token** – Enter the **Personal Access Token (PAT)** of an Admin user.\
-       👉 [Learn how to create a PAT in Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate)
-    2. **Azure DevOps Organisation Name** – Extract the organisation name from your Azure DevOps URL.\
-       Example:
+    - **PAT Token** – Paste the token you generated above.
+    - **Azure DevOps Organisation Name** – Extract this from your Azure DevOps URL.\
+      Example:
 
-       ```
-       https://dev.azure.com/bluetowers/
-       ```
+      ```
+      https://dev.azure.com/bluetowers/
+      ```
 
-       → organisation name is **bluetowers**.
-    3. **Bot Email** – Enter the email address of the bot user.
+      → organisation name is **bluetowers**.
+    - **Bot Email** – Enter the email of the review user you created earlier.
 
     Click **Save Settings** when done.
 
