@@ -12,6 +12,17 @@ Follow these steps to connect Refacto to your Azure DevOps repositories.
 
       ![Azure Integration Page Pn](/images/installation/azure/azure-integration-page.png)
   </Step>
+  
+  <Step title="Open Azure Repos Setup Form" icon="form">
+    - After clicking **Connect**, you’ll be redirected to the **Azure Repos setup form** in Refacto.  
+    - This form requires three fields: **PAT Token**, **Organisation Name**, and **Bot Email**.  
+    - To get these values, please follow the next steps:  
+      - Create a Review User  
+      - Generate a Personal Access Token (PAT)  
+
+    ![Azure Setup Form Empty Pn](/images/installation/azure/azure-form.png)
+  </Step>
+  
   <Step title="Create a Review User" icon="user">
     You need to create a dedicated **review user** in Azure DevOps.
 
@@ -28,6 +39,7 @@ Follow these steps to connect Refacto to your Azure DevOps repositories.
 
        ![Project Admin Pn](/images/installation/azure/project-admin.png)
   </Step>
+  
   <Step title="Generate a Personal Access Token (PAT)" icon="key">
     Next, create a Personal Access Token for the review user.
 
@@ -40,6 +52,7 @@ Follow these steps to connect Refacto to your Azure DevOps repositories.
 
     ![Azure DevOps PAT Creation](/images/integrations/azure-pat.png)
   </Step>
+  
   <Step title="Fill in the Setup Form" icon="form">
     On the Azure Repos setup page in Refacto, provide the following:
 
@@ -58,11 +71,13 @@ Follow these steps to connect Refacto to your Azure DevOps repositories.
 
     ![Azure Repos setup form with PAT Token, Organisation Name, and Bot Email fields](/images/integrations/azure-repos-form.png)
   </Step>
+  
   <Step title="Verify the Connection" icon="check">
     - Refacto will validate your credentials.
     - If successful, you’ll see a confirmation message.
     - Your repositories will begin syncing.
   </Step>
+  
   <Step title="Done 🎉" icon="party">
     Your Azure Repos integration is now active.\
     You can track pull requests and analyze engineering metrics directly in the Refacto dashboard.
