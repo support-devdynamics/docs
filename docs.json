@@ -17,7 +17,12 @@
             "group": "Getting started",
             "pages": [
               "index",
-              "installation",
+              {
+                "title": "Integrations",
+                "pages": [
+                  "integrations/github"
+                ]
+              },
               "usage",
               "settings"
             ]
