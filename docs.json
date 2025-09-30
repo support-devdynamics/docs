@@ -17,13 +17,7 @@
             "group": "Getting started",
             "pages": [
               "index",
-              {
-                "title": "Integrations",
-                "pages": [
-                  "integrations/github",
-                  "integrations/azure-repos"
-                ]
-              },
+              "installation",
               "usage",
               "settings"
             ]
