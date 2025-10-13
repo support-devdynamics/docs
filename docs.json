@@ -31,7 +31,13 @@
                 "expanded": true,
                 "pages": [
                   "settings/pr_review",
-                  "settings/custom_instructions"
+                  {
+                    "group": "Custom Instructions",
+                    "expandad": true,
+                    "pages": [
+                      "settings/custom_instructions/get_started"
+                    ]
+                  }
                 ]
               },
               "settings"
