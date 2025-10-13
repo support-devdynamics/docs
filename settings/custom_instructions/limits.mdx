@@ -1,4 +1,39 @@
 ---
-title: 'Limits'
+title: "Limits & Validation Rules"
 ---
 
+<Steps>
+  <Step title="Limits and Validation" icon="shield">
+    **Character Limits**
+
+    - 500 characters per block
+    - 4000 characters total per YAML
+
+    **YAML Format Rules**
+
+    - YAML 1.2 compliant
+    - 2-space indentation, no tabs
+    - Allowed root fields: `version`, `language`, `org`, `repos`
+
+    **Validation Requirements**
+
+    - At least one instruction required
+    - Repo names: alphanumeric, `_` or `-` only
+    - Up to 10 repos, 20 items per `match` array
+
+    **Security Checks**
+
+    - Avoid terms like “ignore above”, “override”, “forget previous”
+    - Don’t include text that alters AI behavior or review logic
+
+    <Note>
+      These safeguards ensure consistent and safe PR reviews.
+    </Note>
+  </Step>
+  <Step title="Preview and Verify" icon="search">
+    Use **Show Preview** in the Custom Instructions tab to confirm:
+
+    - YAML structure validity
+    - Which rules apply to which repositories
+  </Step>
+</Steps>
