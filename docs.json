@@ -30,7 +30,8 @@
                 "group": "Settings",
                 "expanded": true,
                 "pages": [
-                  "settings/pr_review"
+                  "settings/pr_review",
+                  "settings/custom_instructions.mdx"
                 ]
               },
               "settings"
