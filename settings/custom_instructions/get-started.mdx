@@ -1,0 +1,35 @@
+---
+title: "Get Started"
+description: "Learn how to define and apply custom AI review rules using YAML in Refacto."
+---
+
+
+<Steps>
+  <Step title="Open Custom Instructions" icon="compass">
+    - Navigate to **Refacto → Settings → Custom Instructions**.
+    - You’ll see two tabs:
+      - **PR Review** – controls how the AI analyzes pull requests.
+      - **Custom Instructions** – lets you define rules and coding standards using YAML.
+  </Step>
+  <Step title="Choose How to Start" icon="file-plus">
+    You can begin in two ways:
+
+    - **Load Example & Get Started** – creates a sample YAML with one org rule and two repo rules.
+    - **Start from Scratch** – starts with an empty config.
+  </Step>
+  <Step title="Edit the Template" icon="pencil">
+    When you load the example, a YAML editor opens with three prefilled blocks (1 org, 2 repo-specific).
+
+    You can click **Add Repository** to insert a new block.
+
+    | Field              | Description                 | Example                              |
+    | ------------------ | --------------------------- | ------------------------------------ |
+    | `match.paths`      | Regex to match file paths   | `src/java*`                          |
+    | `match.extensions` | File extensions to include  | `.ts, .js`                           |
+    | `instructions`     | The actual review rule text | `"All PRs must include unit tests."` |
+
+    <Note>
+      Only the content under instructions counts toward the 500-character limit per block.
+    </Note>
+  </Step>
+</Steps>

@@ -33,14 +33,15 @@
                   "settings/pr_review",
                   {
                     "group": "Custom Instructions",
-                    "expandad": true,
+                    "expanded": true,
                     "pages": [
-                      "settings/custom_instructions/get_started"
+                      "settings/custom_instructions/get-started",
+                      "settings/custom_instructions/updates-and-resubmissions",
+                      "settings/custom_instructions/limits"
                     ]
                   }
                 ]
-              },
-              "settings"
+              }
             ]
           }
         ]
@@ -68,11 +69,9 @@
     }
   },
   "contextual": {
-    "options": [
-    ]
+    "options": []
   },
   "footer": {
-    "socials": {
-    }
+    "socials": {}
   }
 }

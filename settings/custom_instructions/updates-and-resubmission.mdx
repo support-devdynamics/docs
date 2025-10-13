@@ -1,0 +1,52 @@
+---
+title: "Updates & Resubmission"
+---
+
+<Steps>
+  <Step title="Submit for Review" icon="upload">
+    Below the editor, you’ll find a summary table showing:
+
+    - Character usage per block
+    - Status (No Status, Approved, In Review, Rejected)
+    - Rejection reason (if any)
+
+    Select blocks to send for approval and click **Submit & Apply**.
+
+    | Status    | Meaning                                      |
+    | --------- | -------------------------------------------- |
+    | No status | Not yet submitted                            |
+    | In Review | Under validation (usually a few days)        |
+    | Approved  | Instructions are active                      |
+    | Rejected  | Invalid or security violation (reason shown) |
+  </Step>
+  <Step title="Verify Rules in PRs" icon="eye">
+    When Refacto reviews a PR, it posts a summary comment with:
+
+    - **Applied Instructions** – which rules were used
+    - **Unapplied Instructions** – skipped rules and reasons (e.g., repo mismatch)
+
+    <Note>
+      Once approved, your rules automatically apply to all matching PRs across the organization.
+    </Note>
+  </Step>
+  <Step title="Update or Resubmit" icon="arrows-rotate-reverse">
+    You’ll need to update your YAML when:
+
+    - Repo structure or coding standards change
+    - A submission was previously rejected
+
+    To resubmit:
+
+    1. Open your existing YAML config
+    2. Edit only the changed block(s)
+    3. Select updated or rejected blocks
+    4. Click **Submit for Review**
+
+    Approved blocks stay active until the new version is approved.\
+    Rejected blocks display a “Rejection Reason”.
+
+    <Note>
+      Avoid flagged words like “ignore above”, “override”, or “bypass”. Keep YAML syntax valid with 2-space indents.
+    </Note>
+  </Step>
+</Steps>
