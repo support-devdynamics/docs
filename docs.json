@@ -33,7 +33,7 @@
                   "settings/pr_review",
                   {
                     "group": "Custom Instructions",
-                    "expanded": true,
+                    "expanded": false,
                     "pages": [
                       "settings/custom_instructions/get-started",
                       "settings/custom_instructions/updates-and-resubmission",
