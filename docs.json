@@ -26,6 +26,13 @@
                 ]
               },
               "usage",
+              {
+                "group": "Settings",
+                "expanded": true,
+                "pages": [
+                  "settings/pr_review"
+                ]
+              },
               "settings"
             ]
           }
