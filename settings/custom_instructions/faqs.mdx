@@ -1,0 +1,38 @@
+---
+title: "FAQs"
+path: "/settings/custom-instructions/faqs"
+---
+
+### 1. My YAML shows “Rejected”. What does it mean?
+
+The instruction block failed validation — check **“Rejection Reason”** in the table for details and resubmit after editing.
+
+### 2. My instructions are approved but not applied to a PR.
+
+Ensure the **match paths/extensions** actually match changed files, and that the **repo name** matches the current PR’s repository.
+
+### 3. Can I have org-wide and repo-specific rules?
+
+Yes — you can define both, and they work inclusively.
+
+- **Org-wide rules** apply to all repositories in your organization, but only if the files match their defined match conditions (`paths` or `extensions`).
+- **Repo-specific rules** apply only to the selected repository and follow their own match filters.
+- If a file satisfies both org and repo matches, both rule sets are applied — org rules act as the shared baseline, while repo rules add more granular or project-specific checks.
+
+### 4. How do I test before submitting?
+
+Use **“Show Preview”** in the Custom Instructions tab to check how your YAML configuration will be structured and which repositories your rules will apply to.
+
+This helps verify that your match conditions (`paths`, `extensions`) are correctly set. The actual file-level matches are only visible during a live review, where Refacto shows which instructions were applied or skipped for specific files.
+
+### 5. I edited one block — do I need to resubmit all?
+
+No — only select updated/rejected blocks before submission.
+
+### 6. Are comments inside YAML counted in limits?
+
+No, only characters inside `instructions:` fields count.
+
+### 7. Can I use multiple file patterns?
+
+Yes, `paths:` and `extensions:` accept arrays up to 20 items each.

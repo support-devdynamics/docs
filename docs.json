@@ -37,7 +37,8 @@
                     "pages": [
                       "settings/custom_instructions/get-started",
                       "settings/custom_instructions/updates-and-resubmission",
-                      "settings/custom_instructions/limits"
+                      "settings/custom_instructions/limits",
+                      "settings/custom_instructions/faqs"
                     ]
                   }
                 ]
