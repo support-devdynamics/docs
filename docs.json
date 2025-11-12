@@ -22,7 +22,8 @@
                 "expanded": true,
                 "pages": [
                   "integrations/github",
-                  "integrations/azure_repos"
+                  "integrations/azure_repos",
+                  "integrations/bitbucket_cloud"
                 ]
               },
               "usage",
