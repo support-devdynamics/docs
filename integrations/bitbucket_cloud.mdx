@@ -10,7 +10,7 @@ Follow these steps to connect Refacto to your Bitbucket Cloud workspace.
     - Navigate to the **Integrations** page in your Refacto dashboard.
     - Click **Connect** on **Bitbucket Cloud**.
 
-      ![Bitbucket Integration Page](/bitbucket-integration-page.png)
+      ![Bitbucket Integration Page](/images/installation/bitbucket_cloud/bitbucket-integration-page.png)
   </Step>
   <Step title="Open Bitbucket Setup Form" icon="clipboard-list">
     - After clicking **Connect**, you’ll be redirected to the **Bitbucket Cloud setup form** in Refacto.
@@ -19,7 +19,7 @@ Follow these steps to connect Refacto to your Bitbucket Cloud workspace.
       - Create an **API Token**
       - Invite the **Refacto Bot User**
 
-      ![Bitbucket Setup Form](bitbucket-form.png)
+      ![Bitbucket Setup Form](/images/installation/bitbucket_cloud/bitbucket-form.png)
   </Step>
   <Step title="Create an API Token" icon="key">
     You need to create a **Bitbucket API token** with appropriate permissions.
@@ -30,14 +30,14 @@ Follow these steps to connect Refacto to your Bitbucket Cloud workspace.
        **Settings → Atlassian Account Settings → Security**,\
        or open https://id.atlassian.com/manage-profile/security/api-tokens
 
-       ![Bitbucket Security Page](/bitbucket-security.png)
+       ![Bitbucket Security Page](/images/installation/bitbucket_cloud/bitbucket-security.png)
     2. Click **Create API token with scopes**.
     3. Give it a name (e.g., **Refacto Integration**) and set an expiry (recommended **360 days**).
 
-       ![Bitbucket Name And Expiry](/bitbucket-token-name-expiry.png)
+       ![Bitbucket Name And Expiry](/images/installation/bitbucket_cloud/bitbucket-token-name-expiry.png)
     4. Under **Select the app**, choose **Bitbucket**.
 
-       ![Bitbucket App Select](/bitbucket-app-select.png)
+       ![Bitbucket App Select](/images/installation/bitbucket_cloud/bitbucket-app-select.png)
     5. Under **Select Bitbucket scopes**, check the following scopes:
        - **read:user:bitbucket**, **read:account**
        - **read:webhook:bitbucket**, **write:webhook:bitbucket**, **delete:webhook:bitbucket**
@@ -45,10 +45,10 @@ Follow these steps to connect Refacto to your Bitbucket Cloud workspace.
        - **read:pullrequest:bitbucket**
        - **read:issue:bitbucket**
 
-       ![Bitbucket Token Permissions](/bitbucket-token-permissions.png)
+       ![Bitbucket Token Permissions](/images/installation/bitbucket_cloud/bitbucket-token-permissions.png)
     6. Under **Review your API token**, verify details and click **Create Token**.
 
-       ![Bitbucket Token Permissions](/bitbucket-review-permissions.png)
+       ![Bitbucket Token Permissions](/images/installation/bitbucket_cloud/bitbucket-review-permissions.png)
 
     <Note>
       Copy and save the token — it’s shown only once.
