@@ -4,22 +4,15 @@ description: "Connect Refacto to your Bitbucket Cloud repositories."
 ---
 
 Follow these steps to connect Refacto to your Bitbucket Cloud workspace.
-
 <Steps>
-  <Step title="Go to Integrations" icon="window">
-    - Navigate to the **Integrations** page in your Refacto dashboard.
-    - Click **Connect** on **Bitbucket Cloud**.
+  <Step title="Invite the Refacto Bot" icon="user">
+    Invite the **Refacto Bot User** to your Bitbucket workspace to allow secure access to repositories during pull request reviews.
 
-      ![Bitbucket Integration Page](/images/installation/bitbucket_cloud/bitbucket-integration-connect.png)
-  </Step>
-  <Step title="Open Bitbucket Setup Form" icon="clipboard-list">
-    - After clicking **Connect**, you’ll be redirected to the **Bitbucket Cloud setup form** in Refacto.
-    - This form requires three fields: **Workspace Slug**, **API Token Owner’s Email**, and **API Token**.
-    - To get these values, please follow the next steps:
-      - Create an **API Token**
-      - Invite the **Refacto Bot User**
+    - The bot requires **read access** to temporarily clone repositories for analysis.
+    - Since **Bitbucket App Passwords are deprecated from September 2025**, Refacto uses an **SSH-based authentication mechanism**.
+    - Add the bot to your workspace using the provided email and grant it read permissions for all repositories (recommended) or only those you want Refacto to review.
 
-      ![Bitbucket Setup Form](/images/installation/bitbucket_cloud/bitbucket-initial-form2.png)
+    **Bot Email:** `security@refacto.ai`
   </Step>
   <Step title="Create an API Token" icon="key">
     You need to create a **Bitbucket API token** with appropriate permissions.
@@ -60,21 +53,26 @@ Follow these steps to connect Refacto to your Bitbucket Cloud workspace.
     - **Workspace Slug** – The workspace identifier in your Bitbucket URL.\
       Example:
 
-      > https://bitbucket.org/bluetowers
-      > → workspace slug is **bluetowers**
+      > https://bitbucket.org/bluetowers → workspace slug is **bluetowers**
     - **API Token Owner’s Email** – The email of the user who created the token.
     - **API Token** – The token you generated above.
 
     Click **Save & Sync Repos** when done.
   </Step>
-  <Step title="Invite the Refacto Bot" icon="user">
-    Invite the **Refacto Bot User** to your Bitbucket workspace to allow secure access to repositories during pull request reviews.
+    <Step title="Go to Integrations" icon="window">
+    - Navigate to the **Integrations** page in your Refacto dashboard.
+    - Click **Connect** on **Bitbucket Cloud**.
 
-    - The bot requires **read access** to temporarily clone repositories for analysis.
-    - Since **Bitbucket App Passwords are deprecated from September 2025**, Refacto uses an **SSH-based authentication mechanism**.
-    - Add the bot to your workspace using the provided email and grant it read permissions for all repositories (recommended) or only those you want Refacto to review.
+      ![Bitbucket Integration Page](/images/installation/bitbucket_cloud/bitbucket-integration-connect.png)
+  </Step>
+  <Step title="Open Bitbucket Setup Form" icon="clipboard-list">
+    - After clicking **Connect**, you’ll be redirected to the **Bitbucket Cloud setup form** in Refacto.
+    - This form requires three fields: **Workspace Slug**, **API Token Owner’s Email**, and **API Token**.
+    - To get these values, please follow the next steps:
+      - Create an **API Token**
+      - Invite the **Refacto Bot User**
 
-    **Bot Email:** `security@refacto.ai`
+      ![Bitbucket Setup Form](/images/installation/bitbucket_cloud/bitbucket-initial-form2.png)
   </Step>
   <Step title="Done" icon="party-horn">
     Your Bitbucket Cloud integration is now active.
