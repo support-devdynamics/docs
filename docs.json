@@ -21,6 +21,7 @@
                 "group": "Integrations",
                 "expanded": true,
                 "pages": [
+                  "integrations/jira",
                   "integrations/github",
                   "integrations/azure_repos",
                   "integrations/bitbucket_cloud",
@@ -49,10 +50,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": []
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
